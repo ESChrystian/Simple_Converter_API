@@ -1,0 +1,251 @@
+/* Importação de paleta de cores e fontes */
+@import url(./variables.css);
+@import url(./variables.css);
+
+* {
+    /* Remove bordas e espaçamentos padrões dos elementos */
+    border: none;
+    padding: none;
+}
+
+body {
+    /* Define altura total da tela e configurações de estilo principais */
+    height: 100vh;
+    background-color: var(--corBack); /* Cor de fundo da tela */
+    font-family: var(--title); /* Fonte principal definida */
+    color: var(--corButton); /* Cor principal do texto */
+}
+
+p {
+    /* Define fonte específica para parágrafos */
+    font-family: Mulish-Light;
+}
+
+main {
+    /* Configura o layout da área principal */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    overflow: hidden;
+}
+
+form {
+    /* Estilização do formulário */
+    display: flex;
+    background-color: var(--corFundo);
+    flex-direction: column;
+    height: 80%;
+    width: 30%;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.box-title {
+    /* Centraliza o título */
+    display: flex;
+    place-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.title {
+    /* Estilo do título */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
+.amount-box {
+    /* Centraliza e organiza a seção amount-box */
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: column;
+    height: 20%;
+    width: 100%;
+}
+
+.content {
+    /* Define largura do conteúdo */
+    width: 90%;
+}
+
+input {
+    /* Estilo dos campos de entrada */
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--inputColor);
+    color: var(--darkFont);
+}
+
+input::placeholder {
+    /* Estilo do texto de placeholder dos inputs */
+    color: var(--darkFont);
+}
+
+.amount-box input:focus {
+    /* Estilo de foco dos campos na seção amount-box */
+    border-bottom: 3px solid 
+}
+
+/* Estilização de caixa de entrada */
+.input-box {
+    height: 35%; /* Define a altura ocupada */
+    width: 100%; /* Usa toda a largura disponível */
+    display: flex; /* Utiliza flex para organizar o layout */
+    flex-direction: column; /* Alinha elementos verticalmente */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda a área */
+    justify-content: space-around; /* Distribui os elementos uniformemente */
+}
+
+/* Centraliza o conteúdo de spans */
+.span {
+    width: 100%; /* Usa toda a largura disponível */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Contêiner flexível para organizar elementos */
+.conteiner-elements {
+    display: flex; /* Layout flexível para a distribuição */
+    flex-wrap: wrap; /* Permite quebrar linha quando necessário */
+    align-items: center; /* Alinha verticalmente os elementos ao centro */
+    justify-content: space-around; /* Distribui elementos com espaçamento */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Caixa para elementos específicos com coluna flex */
+.element-box {
+    display: flex; /* Ativa layout flexível */
+    flex-direction: column; /* Coloca elementos em coluna */
+}
+
+/* Caixa de botões com layout flexível e responsivo */
+.btn-box {
+    height: 20%; /* Define a altura */
+    width: 100%; /* Usa toda a largura disponível */
+    display: flex; /* Configura flexbox para organização */
+    flex-wrap: wrap; /* Permite quebrar linha para responsividade */
+    align-items: center; /* Alinha elementos verticalmente ao centro */
+    place-content: center; /* Centraliza o conteúdo */
+    justify-content: space-around; /* Adiciona espaçamento entre botões */
+}
+
+/* Configurações da seção de conversão */
+#conversao {
+    height: 10%; /* Define altura da seção */
+    width: 100%; /* Usa toda a largura disponível */
+    place-content: center; /* Centraliza o conteúdo */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Define largura fixa para botões em elementos específicos */
+.btn-element {
+    width: 300px; /* Largura específica para o botão */
+}
+
+/* Estilização geral dos botões */
+button {
+    display: block; /* Exibe o botão como bloco */
+    margin-top: 10px; /* Margem superior para espaçamento */
+    width: 100%; /* Usa toda a largura do contêiner */
+    height: 40px; /* Altura fixa do botão */
+    line-height: 40px; /* Altura da linha para centralizar texto */
+    font-size: 12px; /* Tamanho da fonte do texto */
+    border-radius: 10px; /* Arredonda os cantos do botão */
+    text-decoration: none; /* Remove sublinhado do texto */
+    color: var(--lightFont); /* Cor do texto usando variável */
+    background-color: var(--corButton); /* Cor de fundo usando variável */
+    border: 1px solid #333; /* Define borda fina */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Posição relativa para animação de hover */
+    transition: all .35s; /* Animação suave para o hover */
+}
+
+/* Estilização do texto dentro do botão */
+button span {
+    position: relative; /* Define posição para animações */
+    z-index: 2; /* Define nível para manter texto visível acima do fundo */
+}
+
+/* Animação ao passar o mouse sobre o botão */
+button:after {
+    position: absolute; /* Define posição para animação */
+    content: ""; /* Insere conteúdo vazio para animação */
+    top: 0;
+    left: 0;
+    width: 0; /* Largura inicial da animação */
+    height: 100%;
+    border-radius: 10px; /* Arredonda os cantos do efeito */
+    background: var(--corHover); /* Cor de fundo para o efeito */
+    transition: all .35s; /* Transição suave do efeito */
+}
+
+/* Cor do texto ao passar o mouse */
+button:hover {
+    color: var(--darkFont); /* Altera a cor do texto no hover */
+}
+
+/* Expande o fundo do botão ao passar o mouse */
+button:hover:after {
+    width: 100%; /* Largura completa ao passar o mouse */
+}
+
+/* Estilização personalizada para o elemento select */
+select {
+    appearance: none; /* Remove estilo padrão do select */
+    width: 10em; /* Define largura fixa */
+    height: 3em; /* Define altura fixa */
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: none; /* Remove sombra padrão */
+    flex: 1;
+    padding: 0 1em; /* Espaçamento interno para o texto */
+    color: var(--darkFont); /* Cor do texto usando variável */
+    background-color: var(--inputColor); /* Cor de fundo */
+    background-image: none; /* Remove imagem de fundo padrão */
+    cursor: pointer; /* Define o cursor como ponteiro */
+}
+
+/* Remove a seta padrão do select no Internet Explorer */
+select::-ms-expand {
+    display: none; /* Esconde a seta padrão */
+}
+
+/* Contêiner personalizado para o select */
+.select {
+    position: relative; /* Define posição relativa */
+    display: flex; /* Layout flexível */
+    border-radius: .25em; /* Arredonda os cantos */
+    overflow: hidden; /* Oculta conteúdo excedente */
+}
+
+/* Adiciona uma seta personalizada no select */
+.select::after {
+    content: '\25BC'; /* Ícone de seta para baixo */
+    position: absolute; /* Posição absoluta para posicionamento da seta */
+    top: 0;
+    right: 0;
+    padding: 10px; /* Espaçamento interno para a seta */
+    background-color: var(--corButton); /* Cor de fundo da seta */
+    transition: .25s all ease; /* Transição suave para hover */
+    pointer-events: none; /* Remove interação com a seta */
+}
+
+/* Altera cor da seta ao passar o mouse */
+.select:hover::after {
+    color: #f39c12; /* Define cor de hover para a seta */
+}
+
+/* Estilização das opções dentro do select */
+option {
+    background-color: var(--corButton); /* Define cor de fundo */
+    color: var(--lightFont); /* Define cor do texto */
+}
