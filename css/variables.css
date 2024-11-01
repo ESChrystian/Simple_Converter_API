@@ -1,0 +1,26 @@
+@import url(./converter.css);
+@import url(./fonts/);
+:root{
+    --corFundo:#DFF2EB;
+    --corBack:#242424;
+    --corButton:#4E31AA;
+    --corHover:#DBAFA0;
+    --lightFont:#fafafa;
+    --darkFont:#000;
+    --inputColor:#E4E0E1;
+    --title:Mulish-Medium;
+    --text:Mulish-Light;
+}
+
+@font-face {
+    font-family:Mulish-Medium;
+    src: url(fonts/Mulish/Mulish-Medium.ttf);
+}
+@font-face {
+    font-family:Mulish-Light;
+    src: url(fonts/Mulish/Mulish-Light.ttf);
+}
+@font-face {
+    font-family:Mulish-Bold;
+    src: url(fonts/Mulish/Mulish-Bold.ttf);
+}
