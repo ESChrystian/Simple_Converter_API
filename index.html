@@ -10,79 +10,78 @@
 </head>
 
 <body>
-    <main>
-        <form action="" id="Form-convert">
 
-            <!--Título do Projeto-->
-            <div class="box-title">
-                <div class="title">
-                    <h1>Conversor de Moedas</h1>
+    <form action="" id="Form-convert">
+
+        <!--Título do Projeto-->
+        <div class="box-title">
+
+            <h1>Conversor de Moedas</h1>
+
+        </div> <!--Fecha box-title-->
+
+        <!-- Entrada de valor informado pelo usuário -->
+        <div class="amount-box">
+            <div class="content">
+                <!--Orientação ao usuário-->
+                <div class="content-box">
+                    <label for="">Insira um Valor:</label>
                 </div>
-            </div> <!--Fecha box-title-->
+                <!-- Input de entrada de valor -->
+                <div class="content-box">
+                    <input type="text" placeholder="Insira o Valor" id="value-amount">
+                </div>
 
-            <!-- Entrada de valor informado pelo usuário -->
-            <div class="amount-box">
-                <div class="content">
-                    <!--Orientação ao usuário-->
-                    <div class="content-box">
-                        <label for="">Insira um Valor:</label>
-                    </div>
-                    <!-- Input de entrada de valor -->
-                    <div class="content-box">
-                        <input type="text" placeholder="Insira o Valor" id="value-amount">
-                    </div>
+            </div> <!--Fecha content-->
+        </div> <!--Fecha amount-box-->
 
-                </div> <!--Fecha content-->
-            </div> <!--Fecha amount-box-->
+        <!--Seleção de Moedas á serem convertidas-->
+        <div class="input-box">
+            <!-- Orientação ao usuário -->
+            <div class="span">
+                <h4>Selecione as moedas para converção</h2>
+            </div> <!--Fecha span-->
+            <!-- Contém os dois elementos -->
+            <div class="conteiner-elements">
+                <div class="element-box">
+                    <label for="ofCoins">Dê:</label>
+                    <div class="select">
+                        <select id="ofCoins" required>
+                            <option value="BRL">Real(BRL)</option>
+                            <option value="USD">Dólar(USD)</option>
+                            <option value="EUR">Euro(EUR)</option>
+                            <option value="GBP">Libra(GBP)</option>
+                        </select>
+                    </div> <!--Fecha div select-->
+                </div> <!-- Fecha primeiro element-box-->
+                <div class="element-box">
+                    <label for="forCoins">Para:</label>
+                    <div class="select">
+                        <select id="forCoins" required><img src="real.png" alt="" width="20px">
+                            <option value="BRL">Real(BRL)</option>
+                            <option value="USD">Dólar(USD)</option>
+                            <option value="EUR">Euro(EUR)</option>
+                            <option value="GBP">Libra(GBP)</option>
+                        </select>
+                    </div> <!--Fecha div select-->
+                </div> <!--Fecha segundo element-box-->
+            </div> <!--Fecha conteiner-elements-->
+        </div> <!-- Fecha input-box-->
+        <!-- Área dos botões -->
+        <div class="btn-box">
+            <!-- Botão Conversão -->
 
-            <!--Seleção de Moedas á serem convertidas-->
-            <div class="input-box">
-                <!-- Orientação ao usuário -->
-                <div class="span">
-                    <h4>Selecione as moedas para converção</h2>
-                </div> <!--Fecha span-->
-                <!-- Contém os dois elementos -->
-                <div class="conteiner-elements">
-                    <div class="element-box">
-                        <label for="ofCoins">Dê:</label>
-                        <div class="select">
-                            <select id="ofCoins" required>
-                                <option value="BRL">Real(BRL)</option>
-                                <option value="USD">Dólar(USD)</option>
-                                <option value="EUR">Euro(EUR)</option>
-                                <option value="GBP">Libra(GBP)</option>
-                            </select>
-                        </div> <!--Fecha div select-->
-                    </div> <!-- Fecha primeiro element-box-->
-                    <div class="element-box">
-                        <label for="forCoins">Para:</label>
-                        <div class="select">
-                            <select id="forCoins" required><img src="real.png" alt="" width="20px">
-                                <option value="BRL">Real(BRL)</option>
-                                <option value="USD">Dólar(USD)</option>
-                                <option value="EUR">Euro(EUR)</option>
-                                <option value="GBP">Libra(GBP)</option>
-                            </select>
-                        </div> <!--Fecha div select-->
-                    </div> <!--Fecha segundo element-box-->
-                </div> <!--Fecha conteiner-elements-->
-            </div> <!-- Fecha input-box-->
-            <!-- Área dos botões -->
-            <div class="btn-box">
-                <!-- Botão Conversão -->
-                <div class="btn-element">
-                    <button type="submit" class="btnConverter"><span>Converter</span></button>
-                </div> <!--Fecha primeiro btn-element-->
-                <!-- Botão Limpar -->
-                <div class="btn-element">
-                    <button type="reset" class="btnReset"><span>Limpar</span></button>
-                </div> <!--Fecha segundo btn-element-->
-            </div> <!--Fecha btn-box-->
+            <button type="submit" class="btnConverter"><span>Converter</span></button>
 
-            <div id="conversao"> <!--Mensagem de Span-->
-            </div>
-        </form>
-    </main>
+            <!-- Botão Limpar -->
+
+            <button type="reset" class="btnReset"><span>Limpar</span></button>
+
+        </div> <!--Fecha btn-box-->
+
+        <div id="conversao"> <!--Mensagem de Span-->
+        </div>
+    </form>
 
     <script src='conversor.js'></script>
 </body>

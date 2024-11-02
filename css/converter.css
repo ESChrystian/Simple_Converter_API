@@ -14,6 +14,9 @@ body {
     background-color: var(--corBack); /* Cor de fundo da tela */
     font-family: var(--title); /* Fonte principal definida */
     color: var(--corButton); /* Cor principal do texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p {
@@ -21,25 +24,18 @@ p {
     font-family: Mulish-Light;
 }
 
-main {
-    /* Configura o layout da área principal */
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    place-content: center;
-    overflow: hidden;
-}
 
 form {
     /* Estilização do formulário */
     display: flex;
     background-color: var(--corFundo);
     flex-direction: column;
-    height: 80%;
-    width: 30%;
+    height: 70%;
+    max-width: 400px;
+    width: 100%;
     border-radius: 40px;
-    padding: 20px;
+    padding: 30px;
+   
 }
 
 .box-title {
@@ -98,11 +94,9 @@ input::placeholder {
 
 /* Estilização de caixa de entrada */
 .input-box {
-    height: 35%; /* Define a altura ocupada */
     width: 100%; /* Usa toda a largura disponível */
     display: flex; /* Utiliza flex para organizar o layout */
     flex-direction: column; /* Alinha elementos verticalmente */
-    overflow: hidden; /* Esconde qualquer conteúdo que exceda a área */
     justify-content: space-around; /* Distribui os elementos uniformemente */
 }
 
@@ -115,7 +109,6 @@ input::placeholder {
 /* Contêiner flexível para organizar elementos */
 .conteiner-elements {
     display: flex; /* Layout flexível para a distribuição */
-    flex-wrap: wrap; /* Permite quebrar linha quando necessário */
     align-items: center; /* Alinha verticalmente os elementos ao centro */
     justify-content: space-around; /* Distribui elementos com espaçamento */
     width: 100%; /* Ocupa toda a largura disponível */
@@ -129,10 +122,10 @@ input::placeholder {
 
 /* Caixa de botões com layout flexível e responsivo */
 .btn-box {
-    height: 20%; /* Define a altura */
     width: 100%; /* Usa toda a largura disponível */
     display: flex; /* Configura flexbox para organização */
     flex-wrap: wrap; /* Permite quebrar linha para responsividade */
+    padding: 10px;
     align-items: center; /* Alinha elementos verticalmente ao centro */
     place-content: center; /* Centraliza o conteúdo */
     justify-content: space-around; /* Adiciona espaçamento entre botões */
@@ -140,23 +133,18 @@ input::placeholder {
 
 /* Configurações da seção de conversão */
 #conversao {
-    height: 10%; /* Define altura da seção */
-    width: 100%; /* Usa toda a largura disponível */
+    margin-top: 10px;
     place-content: center; /* Centraliza o conteúdo */
     text-align: center; /* Centraliza o texto */
 }
 
 /* Define largura fixa para botões em elementos específicos */
-.btn-element {
-    width: 300px; /* Largura específica para o botão */
-}
 
 /* Estilização geral dos botões */
 button {
-    display: block; /* Exibe o botão como bloco */
+    max-width: 300px; 
     margin-top: 10px; /* Margem superior para espaçamento */
     width: 100%; /* Usa toda a largura do contêiner */
-    height: 40px; /* Altura fixa do botão */
     line-height: 40px; /* Altura da linha para centralizar texto */
     font-size: 12px; /* Tamanho da fonte do texto */
     border-radius: 10px; /* Arredonda os cantos do botão */
@@ -183,7 +171,7 @@ button:after {
     top: 0;
     left: 0;
     width: 0; /* Largura inicial da animação */
-    height: 100%;
+    height: 100%;   
     border-radius: 10px; /* Arredonda os cantos do efeito */
     background: var(--corHover); /* Cor de fundo para o efeito */
     transition: all .35s; /* Transição suave do efeito */
@@ -202,11 +190,12 @@ button:hover:after {
 /* Estilização personalizada para o elemento select */
 select {
     appearance: none; /* Remove estilo padrão do select */
-    width: 10em; /* Define largura fixa */
+    max-width: 150px; /* Define largura fixa */
+    width:100%;
+    margin-left: 10px;
     height: 3em; /* Define altura fixa */
     outline: none; /* Remove o contorno padrão */
     box-shadow: none; /* Remove sombra padrão */
-    flex: 1;
     padding: 0 1em; /* Espaçamento interno para o texto */
     color: var(--darkFont); /* Cor do texto usando variável */
     background-color: var(--inputColor); /* Cor de fundo */
@@ -233,7 +222,9 @@ select::-ms-expand {
     position: absolute; /* Posição absoluta para posicionamento da seta */
     top: 0;
     right: 0;
-    padding: 10px; /* Espaçamento interno para a seta */
+    height: 100%;
+    display: flex;
+    align-items: center;
     background-color: var(--corButton); /* Cor de fundo da seta */
     transition: .25s all ease; /* Transição suave para hover */
     pointer-events: none; /* Remove interação com a seta */
