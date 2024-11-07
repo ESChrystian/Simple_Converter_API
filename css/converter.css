@@ -125,9 +125,9 @@ input::placeholder {
     width: 100%; /* Usa toda a largura disponível */
     display: flex; /* Configura flexbox para organização */
     flex-wrap: wrap; /* Permite quebrar linha para responsividade */
-    padding: 10px;
     align-items: center; /* Alinha elementos verticalmente ao centro */
     place-content: center; /* Centraliza o conteúdo */
+    margin-top: 10px;
     justify-content: space-around; /* Adiciona espaçamento entre botões */
 }
 
