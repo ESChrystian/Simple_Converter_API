@@ -8,9 +8,9 @@
   <a href="#page_facing_up">API Utilizada:</a> &#xa0; | &#xa0;
   <a href="#cloud">Como A API e Utilizada:</a> &#xa0; | &#xa0;
   <a href="#Estrutura de Código"> Estrutura do codigo:</a> &#xa0; | &#xa0;
-  <a href="Como-Usar">Como Usar:</a> &#xa0; | &#xa0;
-  <a href="Tecnologias-Utilizadas">Tecnologias Utilizadas:</a> &#xa0; | &#xa0;
-  <a href="Desenvolvedores">Desenvolvedores:</a> &#xa0; | &#xa0;
+  <a href="#como-usar">Como Usar:</a> &#xa0; | &#xa0;
+  <a href="#tecnologias-utilizadas">Tecnologias Utilizadas:</a> &#xa0; | &#xa0;
+  <a href="#desenvolvedores">Desenvolvedores:</a> &#xa0; | &#xa0;
 </p>
 
 
