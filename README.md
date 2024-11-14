@@ -4,10 +4,10 @@
 ![Interface](interface.png)
 <p align="center">
   <a href="#coffee-sobre">Sobre:</a> &#xa0; | &#xa0; 
-  <a href="#globe_with_meridians">Funcionalidades:</a> &#xa0; | &#xa0;
-  <a href="#page_facing_up">API Utilizada:</a> &#xa0; | &#xa0;
-  <a href="#cloud">Como A API e Utilizada:</a> &#xa0; | &#xa0;
-  <a href="#Estrutura de Código"> Estrutura do codigo:</a> &#xa0; | &#xa0;
+  <a href="#globe_with_meridians-funcionalidades">Funcionalidades:</a> &#xa0; | &#xa0;
+  <a href="#page_facing_up-api-utilizada">API Utilizada:</a> &#xa0; | &#xa0;
+  <a href="#cloud-como-a-api-é-utilizada">Como A API e Utilizada:</a> &#xa0; | &#xa0;
+  <a href="#estrutura-de-código"> Estrutura do codigo:</a> &#xa0; | &#xa0;
   <a href="#como-usar">Como Usar:</a> &#xa0; | &#xa0;
   <a href="#tecnologias-utilizadas">Tecnologias Utilizadas:</a> &#xa0; | &#xa0;
   <a href="#desenvolvedores">Desenvolvedores:</a> &#xa0; | &#xa0;
