@@ -1,17 +1,17 @@
 
 # Conversor de Moedas - Versão 2.0 :octocat:
+<p align="center">
+  <a href="#coffee-sobre">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#globe_with_meridians-funcionalidades">Funcionalidades</a> &#xa0; | &#xa0;
+  <a href="#page_facing_up-api-utilizada">API Utilizada</a> &#xa0; | &#xa0;
+  <a href="#estrutura-de-código"> Estrutura do Código:</a> &#xa0; | &#xa0;
+  <a href="#como-usar">Como Usar</a> &#xa0; | &#xa0;
+  <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> &#xa0; | &#xa0;
+  <a href="#desenvolvedores">Desenvolvedores</a> &#xa0;  &#xa0;
+</p>
+
 
 ![Interface](interface.png)
-<p align="center">
-  <a href="#coffee-sobre">Sobre:</a> &#xa0; | &#xa0; 
-  <a href="#globe_with_meridians-funcionalidades">Funcionalidades:</a> &#xa0; | &#xa0;
-  <a href="#page_facing_up-api-utilizada">API Utilizada:</a> &#xa0; | &#xa0;
-  <a href="#cloud-como-a-api-é-utilizada">Como A API e Utilizada:</a> &#xa0; | &#xa0;
-  <a href="#estrutura-de-código"> Estrutura do codigo:</a> &#xa0; | &#xa0;
-  <a href="#como-usar">Como Usar:</a> &#xa0; | &#xa0;
-  <a href="#tecnologias-utilizadas">Tecnologias Utilizadas:</a> &#xa0; | &#xa0;
-  <a href="#desenvolvedores">Desenvolvedores:</a> &#xa0; | &#xa0;
-</p>
 
 
 ### :coffee: Sobre:
@@ -109,7 +109,7 @@ document.getElementById("Form-convert").addEventListener("submit", async functio
 
 
 ## Desenvolvedores:
-[Leonardo Rocha](): Desenvolvedor do Código JavaScript.
+[Leonardo Rocha](https://github.com/leonardossrocha): Desenvolvedor do Código JavaScript.
 
-[Chrystian](): Documentação do projeto e desenvolvimento da estrutura html e css.
+[Chrystian de Almeida Silva](https://github.com/ESChrystian): Documentação do projeto e desenvolvimento da estrutura html e css.
 
