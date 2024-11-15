@@ -1,11 +1,11 @@
 @import url(./converter.css);
 @import url(./fonts/);
 :root{
-    --corFundo:#DFF2EB;
+    --corFundo:#3B1C32;
     --corBack:#242424;
-    --corButton:#4E31AA;
+    --corButton:#1A1A1D;
     --corHover:#DBAFA0;
-    --lightFont:#fafafa;
+    --lightFont:#A64D79;
     --darkFont:#000;
     --inputColor:#E4E0E1;
     --title:Mulish-Medium;

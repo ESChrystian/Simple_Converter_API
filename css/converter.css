@@ -1,6 +1,5 @@
 /* Importação de paleta de cores e fontes */
 @import url(./variables.css);
-@import url(./variables.css);
 
 * {
     /* Remove bordas e espaçamentos padrões dos elementos */
@@ -13,7 +12,7 @@ body {
     height: 100vh;
     background-color: var(--corBack); /* Cor de fundo da tela */
     font-family: var(--title); /* Fonte principal definida */
-    color: var(--corButton); /* Cor principal do texto */
+    color: var(--lightFont); /* Cor principal do texto */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +27,7 @@ p {
 form {
     /* Estilização do formulário */
     display: flex;
+    
     background-color: var(--corFundo);
     flex-direction: column;
     height: 70%;
@@ -35,7 +35,12 @@ form {
     width: 100%;
     border-radius: 40px;
     padding: 30px;
+    transition: 3s ease-in-out;
    
+}
+
+form:hover {
+    border: 1px solid var(--lightFont);
 }
 
 .box-title {
@@ -232,7 +237,7 @@ select::-ms-expand {
 
 /* Altera cor da seta ao passar o mouse */
 .select:hover::after {
-    color: #f39c12; /* Define cor de hover para a seta */
+    color: #A64D79; /* Define cor de hover para a seta */
 }
 
 /* Estilização das opções dentro do select */
